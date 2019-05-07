@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sam Johns">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Design System</title>
+
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Include JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Include Main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <!-- Include Design System CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/downloads/design_system.css"/> -->
+
+</head>
+<body>
+    <div class="global_site_wrapper">
+        <div class="global_header">
+            <div class="global_header_container">
+                <h1>Design System</h1>
+            </div> <!-- Global header container -->
+        </div> <!-- Global header -->
+        <div class="global_body_wrapper">
+            <div class="side_bar_wrapper">
+                <ul>
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="navigation.html">Navigation</a></li>
+                    <li><a href="header.html">Header</a></li>
+                    <li><a href="jumbotron.html">Jumbotron</a></li>
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="buttons.html" class="active">Buttons</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="feedback.html">Footer</a></li>
+                </ul>
+            </div> <!-- Side bar wrapper -->
+            <div class="main_body_wrapper">
+                <div class="body_content_container">
+                    <h1>Buttons</h1>
+
+                    <div class="buttons_row">
+
+                            <a class=" btn filled">Default</a>
+                            <a class=" btn primary filled">Primay</a>
+                            <a class=" btn warning filled">Warning</a>
+                            <a class=" btn critical filled">Critical</a>
+                    
+                          </div> <!-- Buttons row -->
+                    
+                           <div class="buttons_row">
+                    
+                            <a class=" btn outline">Default</a>
+                            <a class=" btn primary outline">Primay</a>
+                            <a class=" btn warning outline">Warning</a>
+                            <a class=" btn critical outline">Critical</a>
+                            
+                          </div> <!-- Buttons row -->
+                    
+                          <div class="buttons_row">
+                    
+                            <a class=" btn text">Default</a>
+                            <a class=" btn primary text">Primay</a>
+                            <a class=" btn warning text">Warning</a>
+                            <a class=" btn critical text">Critical</a>
+                            
+                          </div> <!-- Buttons row -->
+                    
+                          <div class="buttons_row">
+                            <a class=" btn disabled">Disabled</a>
+                          </div> <!-- Buttons row -->
+                    
+                          <div class="buttons_row">
+                    
+                            <div class="btn_drop_down">
+                              <button class="btn filled" onclick="showDropDown(this)">Drop down<i class="fas fa-angle-down"></i></button>
+                              <div class="drop_down_list">
+                                <a href="#" class="drop_down_option">Option 1</a>
+                                <a href="#" class="drop_down_option">Option 2</a>
+                                <a href="#" class="drop_down_option">Option 3</a>
+                              </div> <!-- Drop down options -->
+                            </div> <!-- Drop down buttton -->
+                    
+                           <div class="btn_drop_down">
+                              <button class="btn filled primary" onclick="showDropDown(this)">Drop down<i class="fas fa-angle-down"></i></button>
+                              <div class="drop_down_list primary">
+                                <a href="#" class="drop_down_option primary">Option 1</a>
+                                <a href="#" class="drop_down_option primary">Option 2</a>
+                                <a href="#" class="drop_down_option primary">Option 3</a>
+                              </div> <!-- Drop down options -->
+                            </div> <!-- Drop down buttton -->
+                    
+                            <div class="btn_drop_down">
+                              <button class="btn outline" onclick="showDropDown(this)">Drop down<i class="fas fa-angle-down"></i></button>
+                              <div class="drop_down_list">
+                                <a href="#" class="drop_down_option">Option 1</a>
+                                <a href="#" class="drop_down_option">Option 2</a>
+                                <a href="#" class="drop_down_option">Option 3</a>
+                              </div> <!-- Drop down options -->
+                            </div> <!-- Drop down buttton -->
+                    
+                           <div class="btn_drop_down">
+                              <button class="btn outline primary" onclick="showDropDown(this)">Drop down<i class="fas fa-angle-down"></i></button>
+                              <div class="drop_down_list primary">
+                                <a href="#" class="drop_down_option primary">Option 1</a>
+                                <a href="#" class="drop_down_option primary">Option 2</a>
+                                <a href="#" class="drop_down_option primary">Option 3</a>
+                              </div> <!-- Drop down options -->
+                            </div> <!-- Drop down buttton -->
+                    
+                          </div> <!-- Buttons row -->
+                    
+                          <div class="buttons_row">
+                    
+                            <div class="split_btn_wrapper">
+                                <div class="split_btn">
+                                    <div class="split_btn_left">Post</div>
+                                    <div class="split_btn_right" onclick="showDropDown(this)"><i class="fas fa-angle-down"></i></div>
+                                </div> <!-- Split button-->
+                                <div class="drop_down_list">
+                                  <a href="#" class="drop_down_option">Option 1</a>
+                                  <a href="#" class="drop_down_option">Option 2</a>
+                                  <a href="#" class="drop_down_option">Option 3</a>
+                                </div> <!-- Drop down list -->
+                            </div> <!-- Split button wrapper -->
+                    
+                            <div class="split_btn_wrapper">
+                                <div class="split_btn">
+                                    <div class="split_btn_left primary">Post</div>
+                                    <div class="split_btn_right primary" onclick="showDropDown(this)"><i class="fas fa-angle-down"></i></div>
+                                </div> <!-- Split button-->
+                                <div class="drop_down_list primary">
+                                  <a href="#" class="drop_down_option primary">Option 1</a>
+                                  <a href="#" class="drop_down_option primary">Option 2</a>
+                                  <a href="#" class="drop_down_option primary">Option 3</a>
+                                </div> <!-- Drop down list -->
+                            </div> <!-- Split button wrapper -->
+                    
+                          </div> <!-- Buttons row -->
+
+                </div> <!-- Body content container -->
+            </div> <!-- Main body wrapper -->
+        </div> <!-- Global body wrapper -->
+    </div> <!-- Global site wrapper -->
+
+     <!-- Include Main JavaScript -->
+     <script src="js/main.js"></script>
+
+     <!-- Include Design System JavaScript -->
+     <script src="assets/downloads/design_system.js"></script>
+</body>
+</html>
