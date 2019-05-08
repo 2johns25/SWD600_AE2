@@ -1,23 +1,16 @@
-// function showDropDown(button) {
-//     console.log("Button clicked");
-//     var dropDowns = document.getElementsByClassName("drop_down_list");
-//     var i;
-//     for (i = 0; i < dropDowns.length; i++) {
-//         dropDowns[i].classList.remove("show");
-//     }
-//     button.nextSibling.nextSibling.classList.toggle("show");
-// }
+// DROPDOWN BUTTONS
 
-// window.onclick = function(event) {
-//     if (!event.target.matches(".btn")) {
-//         var dropDowns = document.getElementsByClassName("drop_down_list");
-//         var i;
-//         for (i = 0; i < dropDowns.length; i++) {
-//             var visibleDropDown = dropDowns[i];
-//             if (visibleDropDown.classList.contains("show")) {
-//                 visibleDropDown.classList.remove("show");
-//             }
-//         }
-//     }
-// }
+var dropDown = function(e) {
+    var shownMenu = document.getElementsByClassName("drop_down_list"),
+      targetButton = event.target.closest(".btn");
+    [].forEach.call(shownMenu, function(el) {
+      if (targetButton == null || (targetButton != null && el != targetButton.nextElementSibling)) {
+        setTimeout(function(){ el.classList.remove("show")}, 50);
+      }
+    });
+    if (!!targetButton) {
+      targetButton.nextElementSibling.classList.toggle("show");
+    }
+  };
+  window.addEventListener("click", dropDown, false);
 
