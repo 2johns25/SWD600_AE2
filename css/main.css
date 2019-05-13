@@ -34,6 +34,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     font-size: 16px;
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -50,13 +51,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .global_header {
     width: 100%;
-    border-bottom: 1px solid rgba(169,169,169,1);
+    color: white;
 }
 
 .global_header_container {
     width: 98%;
     margin: 0 auto;
     padding: 10px 5px;
+    color: rgba(62,120,178,1);
+    white-space: normal;
 }
 
 .global_body_wrapper {
@@ -77,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main_body_wrapper {
     width: 100%;
-    padding: 5px 5px;
+    padding: 0 5px;
 }
 
 .body_content_container {
@@ -109,23 +112,29 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 10px;
     display: block;
     border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .side_bar_wrapper ul li a:hover {
-    background-color: lightgrey;
+    background-color: rgba(62,120,178,1);
+    color: white;
 }
 
 .side_bar_wrapper ul li a:active {
-    background-color: darkgrey;
+    background-color: rgb(216, 216, 216);
 }
 
 .side_bar_wrapper ul li a.active {
-    background-color: darkgrey;
+    background-color: rgba(62,120,178,1);
     cursor: default;
+    color: white;
 }
 
-.page_header {
-    font-size: 2rem;
+.body_content_container .section > h1 {
+    font-size: 3rem;
+    color: rgba(62,120,178,1);
+    font-weight: 600;
 }
 
 .page_intro {
@@ -136,6 +145,64 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
 }
 
+.section {
+  border-bottom: 1px solid rgba(169,169,169,1);
+  padding: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
+}
+
+.section h2 {
+  font-weight: 400;
+}
+
+.sub_section {
+  margin: 0 0 2rem 0;
+}
+
+
+
+.sub_section h3 {
+  
+}
+
+.sub_section p {
+  margin: 0 0 1.5rem 0;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+  display: block;
+  width: 100%;
+ border: 1px solid rgba(212,212,212,1);
+  border-radius: 3px; 
+  padding: 5px 10px;
+  overflow-y: scroll;
+  line-height: 1.50;
+  font-size: 14px;
+}
+
+.code_block {
+  display: inline-block;
+}
+
+.tag {
+  color: blue;
+}
+
+.attribute {
+  color: green;
+}
+
+.value {
+  color: orange;
+}
+
+.code_comment {
+  color: red;
+}
 
 /** BUTTONS **/
 
@@ -144,7 +211,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 10rem 0;
   }
   
   /** BUTTONS **/
@@ -365,6 +431,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     font-size: 1rem;
     display: none;
+    background-color: white;
   }
   
   .drop_down_option {
@@ -703,6 +770,7 @@ h1, h2, h3, h4, h5, h6 {
   .footer_nav li a {
     text-decoration: none;
     color: white; 
+    font-weight: 600;
   }
 
   .footer_nav li a:hover {
@@ -751,19 +819,22 @@ h1, h2, h3, h4, h5, h6 {
   /** JUMBOTRON **/
 
   .jumbotron {
-    padding: 10px 10px;
-    box-shadow: 1px 1px 4px 1px rgba(169,169,169,1);
+    padding: 5px 10px;
     width: 100%;
+    background-color: rgb(240, 239, 239);
+    border-radius: 2px;
   }
 
   .jumbotron h1 {
     margin: 0.50rem 0 1rem 0;
+    font-size: 3rem;
   }
 
   .jumbotron p {
     text-align: justify;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 0 1rem 0;
+    font-size: 1.25rem;
   }
 
   .jumbotron .btn {
@@ -839,6 +910,18 @@ h1, h2, h3, h4, h5, h6 {
         padding: 5px 1rem;
     }
 
+    .main_body_wrapper {
+      width: 60%;
+      margin: 0 auto;
+      padding: 0 5px;
+  }
+  
+  .body_content_container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+  }
+
     .side_bar_wrapper {
         max-width: 200px;
         margin: 0 2rem 0 0;
@@ -870,6 +953,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+  .main_body_wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.body_content_container {
+    width: 100%;
+    max-width: 960px;
+    marg
 
   .header_text_container h1, 
   .header_text_container h2 {

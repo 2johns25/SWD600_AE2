@@ -9,6 +9,12 @@
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+     <!-- Include Custom Font -->
+     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+
+    <!-- Include Custom Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
     <!-- Include JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -23,7 +29,7 @@
     <div class="global_site_wrapper">
         <div class="global_header">
             <div class="global_header_container">
-                <h1>simpleSystem</h1>
+                <h1>simplePattern</h1>
             </div> <!-- Global header container -->
         </div> <!-- Global header -->
         <div class="global_body_wrapper">
@@ -46,22 +52,81 @@
                         <p class="page_intro">simpleSystem a simple, lightweight, responsive design system for basic websites.</p>
                     </div>
                     <div class="section">
-                        <h2>Get started</h2>
+                        <h2>Quick start</h2>
 
-                        <h3>Download</h3>
-                        <p class="page_norm">To get started, download simpleSystem</p>
-                        <button>Download</button>
+                        <div class="sub_section">
+                            <h3>Download</h3>
+                            <p class="page_norm">To get started, download the simplePattern library source code. </p>
+                            <a class="btn filled primary">Download</a>
+                        </div>
 
-                        <h3>Set-up</h3>
-                        <p>Once you've downloaded simpleSystem, add the simpleSystem CSS file to the <code>&lt;head&gt;</code> tag</p>
+                        <div class="sub_section">
+                            <h3>CSS</h3>
+                            <p class="page_norm">Within the <code><span class="tag">&lt;/head&gt;</span></code> and before your own custom CSS stylesheets, insert the following code:</p>
+<pre>
+<code class="code_block"><span class="code_comment">&lt;!-- Include Font Awesome --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class=" attribute">href=</span><span class="value">"https://use.fontawesome.com/releases/v5.7.2/css/all.css"</span> <span class="attribute">integrity=</span><span class="value">"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"</span> <span class="attribute">crossorigin=</span><span class="value">"anonymous"</span><span class="tag">&gt;</span>
 
+<span class="code_comment">&lt;!-- Include Design System CSS --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"assets/downloads/design_system.css"</span><span class="tag">/&gt;</span>
+</code>
+                            </pre>
+                        </div>
+
+                        <div class="sub_section">
+                                <h3>JavaScript</h3>
+                                <p class="page_norm">Just before the closing <code><span class="tag">&lt;/body&gt;</span></code> tag, insert the following code:</p>
+<pre>
+<code class="code_block"><span class="code_comment">&lt;!-- Include JQuery --&gt;</span>
+<span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"https://code.jquery.com/jquery-3.4.1.min.js"</span> <span class="attribute">integrity=</span><span class="value">"sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="</span> <span class="attribute">crossorigin=</span><span class="value">"anonymous"</span><span class="tag">&gt;&lt;/script&gt;</span>
+
+<span class="code_comment">&lt;!-- Include Design System JavaScript --&gt;</span>
+<span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"assets/downloads/design_system.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+</code>
+</pre>
+                            </div>
+                        
+                        
+                        <div class="sub_section">
+                            <h3>Basic example</h3>
+                            <p>Below is a basic example of a html template containing the above code.</p>
+
+<pre>
+<code class="code_block"><span>&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attribute">xmlns=</span><span class="value">"http://www.w3.org/1999/xhtml"</span> <span class="attribute">lang=</span><span class="value">"en"</span> <span class="attribute">xml:lang=</span><span class="value">"en"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;head&gt;</span>
+        <span class="tag">&lt;meta</span> <span class="attribute">charset=</span><span class="value">"UTF-8"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;meta</span> <span class="attribute">name=</span><span class="value">"author"</span><span class="attribute">content=</span><span class="value">""</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;meta</span> <span class="attribute">name=</span><span class="value">"viewport"</span> <span class="attribute">content=</span><span class="value">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;title&gt;</span>Webpage title<span class="tag">&lt;/title&gt;</span>
+
+        <span class="code_comment">&lt;!-- Include Font Awesome --&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class=" attribute">href=</span><span class="value">"https://use.fontawesome.com/releases/v5.7.2/css/all.css"</span> <span class="attribute">integrity=</span><span class="value">"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"</span> <span class="attribute">crossorigin=</span><span class="value">"anonymous"</span><span class="tag">&gt;</span>
+
+        <span class="code_comment">&lt;!-- Include Custom Font --&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attribute">href=</span><span class="value">"https://fonts.googleapis.com/css?family=Muli"</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span><span class="tag">&gt;</span>
+
+        <span class="code_comment">&lt;!-- Include Main CSS --&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"css/main.css"</span><span class="tag">/&gt;</span>
+
+        <span class="code_comment">&lt;!-- Include Design System CSS --&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"assets/downloads/design_system.css"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/head&gt;</span>
+    <span class="tag">&lt;body&gt;</span>
+        <span class="code_comment">&lt;!-- Custom HTML --&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Hello World<span class="tag">&lt;/h1&gt;</span>
+
+        <span class="code_comment">&lt;!-- Include JQuery --&gt;</span>
+        <span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"https://code.jquery.com/jquery-3.4.1.min.js"</span> <span class="attribute">integrity=</span><span class="value">"sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="</span> <span class="attribute">crossorigin=</span><span class="value">"anonymous"</span><span class="tag">&gt;&lt;/script&gt;</span>
+
+        <span class="code_comment">&lt;!-- Include Design System JavaScript --&gt;</span>
+        <span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"assets/downloads/design_system.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+    <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span>
+</code>
+</pre>
+                        </div>
                     </div>
-                   
-
-                   
-
-
-
                 </div> <!-- Body content container -->
             </div> <!-- Main body wrapper -->
         </div> <!-- Global body wrapper -->
