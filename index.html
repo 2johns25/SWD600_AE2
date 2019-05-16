@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Sam Johns">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Design System</title>
+    <title>Home | simplePattern</title>
 
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -27,13 +27,9 @@
 </head>
 <body>
     <div class="global_site_wrapper">
-        <div class="global_header">
-            <div class="global_header_container">
-                <h1>simplePattern</h1>
-            </div> <!-- Global header container -->
-        </div> <!-- Global header -->
         <div class="global_body_wrapper">
             <div class="side_bar_wrapper">
+                <h1>simplePattern</h1>
                 <ul>
                     <li><a href="index.html" class="active">Overview</a></li>
                     <li><a href="navigation.html">Navigation</a></li>
@@ -49,7 +45,7 @@
                 <div class="body_content_container">
                     <div class="section">
                         <h1 class="page_header">Overview</h1>
-                        <p class="page_intro">simpleSystem a simple, lightweight, responsive design system for basic websites.</p>
+                        <p class="page_intro">simplePattern a simple, lightweight, responsive design system for basic website implementation.</p>
                     </div>
                     <div class="section">
                         <h2>Quick start</h2>
@@ -57,21 +53,21 @@
                         <div class="sub_section">
                             <h3>Download</h3>
                             <p class="page_norm">To get started, download the simplePattern library source code. </p>
-                            <a class="btn filled primary">Download</a>
+                            <a href="assets/downloads/simplePattern.zip" class="btn filled primary" download>Download</a>
                         </div>
 
                         <div class="sub_section">
                             <h3>CSS</h3>
-                            <p class="page_norm">Within the <code><span class="tag">&lt;/head&gt;</span></code> and before your own custom CSS stylesheets, insert the following code:</p>
+                            <p class="page_norm">Within the <code><span class="tag">&lt;head&gt;</span></code> and before your own custom CSS stylesheets, insert the following code:</p>
 <pre>
 <code class="code_block"><span class="code_comment">&lt;!-- Include Font Awesome --&gt;</span>
 <span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class=" attribute">href=</span><span class="value">"https://use.fontawesome.com/releases/v5.7.2/css/all.css"</span> <span class="attribute">integrity=</span><span class="value">"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"</span> <span class="attribute">crossorigin=</span><span class="value">"anonymous"</span><span class="tag">&gt;</span>
 
-<span class="code_comment">&lt;!-- Include Design System CSS --&gt;</span>
-<span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"assets/downloads/design_system.css"</span><span class="tag">/&gt;</span>
+<span class="code_comment">&lt;!-- Include simplePattern CSS --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"css/simplePattern.css"</span><span class="tag">/&gt;</span>
 </code>
-                            </pre>
-                        </div>
+</pre>
+</div>
 
                         <div class="sub_section">
                                 <h3>JavaScript</h3>
@@ -80,16 +76,17 @@
 <code class="code_block"><span class="code_comment">&lt;!-- Include JQuery --&gt;</span>
 <span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"https://code.jquery.com/jquery-3.4.1.min.js"</span> <span class="attribute">integrity=</span><span class="value">"sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="</span> <span class="attribute">crossorigin=</span><span class="value">"anonymous"</span><span class="tag">&gt;&lt;/script&gt;</span>
 
-<span class="code_comment">&lt;!-- Include Design System JavaScript --&gt;</span>
-<span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"assets/downloads/design_system.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+<span class="code_comment">&lt;!-- Include simplePattern JavaScript --&gt;</span>
+<span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"js/simplePattern.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
 </code>
 </pre>
                             </div>
+                        </div>
                         
                         
-                        <div class="sub_section">
-                            <h3>Basic example</h3>
-                            <p>Below is a basic example of a html template containing the above code.</p>
+                        <div class="section">
+                            <h2>Basic example</h2>
+                            <p>Below is a basic example of a html template, containing the above code snippets.</p>
 
 <pre>
 <code class="code_block"><span>&lt;!DOCTYPE html&gt;</span>
@@ -106,11 +103,8 @@
         <span class="code_comment">&lt;!-- Include Custom Font --&gt;</span>
         <span class="tag">&lt;link</span> <span class="attribute">href=</span><span class="value">"https://fonts.googleapis.com/css?family=Muli"</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span><span class="tag">&gt;</span>
 
-        <span class="code_comment">&lt;!-- Include Main CSS --&gt;</span>
-        <span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"css/main.css"</span><span class="tag">/&gt;</span>
-
-        <span class="code_comment">&lt;!-- Include Design System CSS --&gt;</span>
-        <span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"assets/downloads/design_system.css"</span><span class="tag">/&gt;</span>
+        <span class="code_comment">&lt;!-- Include simplePattern CSS --&gt;</span>
+        <span class="tag">&lt;link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"css/simplePattern.css"</span><span class="tag">/&gt;</span>
     <span class="tag">&lt;/head&gt;</span>
     <span class="tag">&lt;body&gt;</span>
         <span class="code_comment">&lt;!-- Custom HTML --&gt;</span>
@@ -119,8 +113,8 @@
         <span class="code_comment">&lt;!-- Include JQuery --&gt;</span>
         <span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"https://code.jquery.com/jquery-3.4.1.min.js"</span> <span class="attribute">integrity=</span><span class="value">"sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="</span> <span class="attribute">crossorigin=</span><span class="value">"anonymous"</span><span class="tag">&gt;&lt;/script&gt;</span>
 
-        <span class="code_comment">&lt;!-- Include Design System JavaScript --&gt;</span>
-        <span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"assets/downloads/design_system.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+        <span class="code_comment">&lt;!-- Include simplePattern JavaScript --&gt;</span>
+        <span class="tag">&lt;script</span> <span class="attribute">src=</span><span class="value">"js/simplePattern.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
     <span class="tag">&lt;/body&gt;</span>
 <span class="tag">&lt;/html&gt;</span>
 </code>

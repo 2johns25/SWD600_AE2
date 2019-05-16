@@ -24,13 +24,9 @@
 </head>
 <body>
     <div class="global_site_wrapper">
-        <div class="global_header">
-            <div class="global_header_container">
-                <h1>simplePattern</h1>
-            </div> <!-- Global header container -->
-        </div> <!-- Global header -->
         <div class="global_body_wrapper">
             <div class="side_bar_wrapper">
+                    <h1>simplePattern</h1>
                 <ul>
                     <li><a href="index.html">Overview</a></li>
                     <li><a href="navigation.html" class="active">Navigation</a></li>
@@ -46,12 +42,19 @@
                 <div class="body_content_container">
                     <div class="section">
                         <h1>Navigation</h1>
-                        <p class="page_intro">simpleSystem a simple, lightweight, responsive design system for basic websites.</p>
+                        <p class="page_intro">The navigation sits at the top of the website and is home to the sites logo and links to important sections of the site.</p>
                     </div>
 
+                    <div class="section">
+                        <h2>Overview</h2>
 
+                        <p>
+                            simplePattern's navigation comes with a full width, horizontal, responsive navigation bar.
+                            Each link comes with a <code>:hover</code> and <code>:active</code> effects, as well as a <code><span class="value">.active_nav</span></code> class
+                            to style the nav link for the current page that is being displayed.
+                        </p>
 
-                    <div class="header_wrapper">
+                        <div class="header_wrapper">
                             <div class="header_container">
                                 <div class="header_logo"><a href="#">Logo</a></div>
                                 <ul class="nav_wrapper">
@@ -62,6 +65,26 @@
                                 </ul>
                             </div>
                         </div>
+
+
+<pre>
+<code><span class="tag">&lt;div </span><span class="attribute">class=</span><span class="value">"header_wrapper"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="attribute">class=</span><span class="value">"header_container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="attribute">class=</span><span class="value">"header_logo"</span><span class="tag">&gt;&lt;a</span> <span class="attribute">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Logo<span class="tag">&lt;/a&gt;&lt;/div&gt;</span>
+        <span class="tag">&lt;ul </span><span class="attribute">class=</span><span class="value">"nav_wrapper"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a </span><span class="attribute">href=</span><span class="value">"#"</span><span class="attribute">class=</span><span class="value">"active_nav"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a </span><span class="attribute">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Work<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a </span><span class="attribute">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Reviews<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a </span><span class="attribute">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Contact<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</code></pre>
+
+
+                    </div>
+
+                    
                     
                 </div> <!-- Body content container -->
             </div> <!-- Main body wrapper -->

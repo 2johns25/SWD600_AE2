@@ -27,13 +27,9 @@
 </head>
 <body>
     <div class="global_site_wrapper">
-        <div class="global_header">
-            <div class="global_header_container">
-              <h1>simplePattern</h1>
-            </div> <!-- Global header container -->
-        </div> <!-- Global header -->
         <div class="global_body_wrapper">
             <div class="side_bar_wrapper">
+                <h1>simplePattern</h1>
                 <ul>
                     <li><a href="index.html">Overview</a></li>
                     <li><a href="navigation.html">Navigation</a></li>
@@ -49,89 +45,177 @@
                 <div class="body_content_container">
                   <div class="section">
                     <h1>Buttons</h1>
-                    <p class="page_intro">simpleSystem a simple, lightweight, responsive design system for basic websites.</p>
+                    <p class="page_intro">Buttons are interactive elements which can be used to trigger events such as submitting a form or
+                      redirecting the user to another page.
+                    </p>
                   </div>
 
                   <div class="section">
                     <h2>Overview</h2>
+                    <p class="para_norm">Within the simplePattern library, there are many variations of buttons available, including 
+                      filled, outlined, text, grouped, dropdown and disabled. 
+                    </p>
+                    <p>
+                    The <code><span class="value">.btn</span></code> class can be used with several types of HTML elements.
+                    </p>
+
+                    <div class="buttons_row">
+                        <a class="btn">Anchor</a>
+                        <button class="btn">Button</button>
+                        <input type="submit" class=" btn"/>
+                        <input type="reset" class=" btn"/>
+                      </div> <!-- Buttons row -->
+
+<pre>
+<code><span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;button</span> <span class="attribute">class=</span><span class="value">"btn"</span><span class="tag">&gt;</span>Button<span class="tag">&lt;/Button&gt;</span>
+<span class="tag">&lt;input </span><span class="attribute">type=</span><span class="value">"submit" </span><span class="attribute">class=</span><span class="value">"btn"</span><span class="tag">/&gt;</span>
+<span class="tag">&lt;input </span><span class="attribute">type=</span><span class="value">"reset" </span><span class="attribute">class=</span><span class="value">"btn"</span><span class="tag">/&gt;</span>
+</code></pre>
 
                   </div>
 
                   <div class="section">
-                    <h2>Implementation</h2>
+                    <h2>Generic buttons</h2>
 
-                  </div>
+                    <p>Generic buttons are those that are used to submit forms, cancel actions, redirect the user to another page or to trigger
+                    custom event. </br></br>
+                      
+                      The generic buttons are available in three different styles: filled, outlined and basic text. </br></br>
+                      
+                      Each style has 4 colours, including 
+                      grey for the default style, blue for the important CTA buttons, yellow to represent a button which would cause notable changes to a system; and red reprets a button
+                      that when pressed, will result in irreversible changes.
+                    </p>
 
-                  <div class="section">
-                    <h2>Variations</h2>
                     <div class="sub_section">
                       <h3>Filled</h3>
                       <div class="buttons_row">
                         <a class=" btn filled">Default</a>
-                        <a class=" btn primary filled">Primay</a>
+                        <a class=" btn primary filled">Primary</a>
                         <a class=" btn warning filled">Warning</a>
                         <a class=" btn critical filled">Critical</a>
                       </div> <!-- Buttons row -->
+
+<pre>
+<code><span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn filled"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn filled primary"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn filled warning"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn filled critical"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+</code></pre>
+
+
+
                     </div> <!-- Sub section -->
                     <div class="sub_section">
                       <h3>Outline</h3>
                       <div class="buttons_row">
                         <a class=" btn outline">Default</a>
-                        <a class=" btn primary outline">Primay</a>
+                        <a class=" btn primary outline">Primary</a>
                         <a class=" btn warning outline">Warning</a>
                         <a class=" btn critical outline">Critical</a>
                       </div> <!-- Buttons row -->
+
+<pre>
+<code><span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn outline"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn outline primary"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn outline warning"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn outline critical"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+</code></pre>
+
                     </div> <!-- Sub section -->
                     <div class="sub_section">
                       <h3>Text</h3>
                       <div class="buttons_row">
                         <a class=" btn text">Default</a>
-                        <a class=" btn primary text">Primay</a>
+                        <a class=" btn primary text">Primary</a>
                         <a class=" btn warning text">Warning</a>
                         <a class=" btn critical text">Critical</a>
                       </div> <!-- Buttons row -->
+
+
+<pre>
+<code><span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn text"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn text primary"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn text warning"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn text critical"</span><span class="tag">&gt;</span>Anchor<span class="tag">&lt;/a&gt;</span>
+</code></pre>
+
                     </div> <!-- Sub section -->
-                    <div class="sub_section">
-                      <h3>Group</h3>
+                  </div>
+
+
+
+                    <div class="section">
+                      <h2>Button group</h2>
+
+                      <p>
+                        simplePattern's button groups are implemented using radio buttons and are used to select a choice from a range of options.
+                      </p>
+
                       <div class="buttons_row">
                         <div class="btn_group">
                           <label class="btn_check">
-                            <input type="radio" name="composer" value="reminder"/>
+                            <input type="radio" name="choice" value="reminder"/>
                             <span class="btn_label">Choice</span>
                           </label>
                           <label class="btn_check">
-                            <input type="radio" name="composer" value="reminder"/>
+                            <input type="radio" name="choice" value="reminder"/>
                             <span class="btn_label">Choice</span>
                           </label>
                           <label class="btn_check">
-                            <input type="radio" name="composer" value="reminder"/>
+                            <input type="radio" name="choice" value="reminder"/>
                             <span class="btn_label">Choice</span>
                           </label>
                           <label class="btn_check">
-                            <input type="radio" name="composer" value="reminder"/>
+                            <input type="radio" name="choice" value="reminder"/>
                             <span class="btn_label">Choice</span>
                           </label>
                         </div>
                       </div> <!-- Buttons row -->
-                    </div> <!-- Sub section -->
-                    <div class="sub_section">
-                      <h3>Dropdown</h3>
-                      <div class="buttons_row">
+
+
+<pre>
+<code><span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"btn_group"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;label </span><span class="attribute">class=</span><span class="value">"btn_check"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;input </span><span class="attribute">type=</span><span class="value">"radio" </span><span class="attribute">name=</span><span class="value">"choice" </span><span class="attribute">value=</span><span class="value">"value1"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attribute">class=</span><span class="value">"btn_label"</span><span class="tag">&gt;</span>Choice<span class="tag">&lt;/span&gt;</span>
+  <span class="tag">&lt;/label&gt;</span></code>
+  <span class="tag">&lt;label </span><span class="attribute">class=</span><span class="value">"btn_check"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;input </span><span class="attribute">type=</span><span class="value">"radio" </span><span class="attribute">name=</span><span class="value">"choice" </span><span class="attribute">value=</span><span class="value">"value1"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attribute">class=</span><span class="value">"btn_label"</span><span class="tag">&gt;</span>Choice<span class="tag">&lt;/span&gt;</span>
+  <span class="tag">&lt;/label&gt;</span></code>
+  <span class="tag">&lt;label </span><span class="attribute">class=</span><span class="value">"btn_check"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;input </span><span class="attribute">type=</span><span class="value">"radio" </span><span class="attribute">name=</span><span class="value">"choice" </span><span class="attribute">value=</span><span class="value">"value1"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attribute">class=</span><span class="value">"btn_label"</span><span class="tag">&gt;</span>Choice<span class="tag">&lt;/span&gt;</span>
+  <span class="tag">&lt;/label&gt;</span></code>
+  <span class="tag">&lt;label </span><span class="attribute">class=</span><span class="value">"btn_check"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;input </span><span class="attribute">type=</span><span class="value">"radio" </span><span class="attribute">name=</span><span class="value">"choice" </span><span class="attribute">value=</span><span class="value">"value1"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attribute">class=</span><span class="value">"btn_label"</span><span class="tag">&gt;</span>Choice<span class="tag">&lt;/span&gt;</span>
+  <span class="tag">&lt;/label&gt;</span></code>
+<span class="tag">&lt;/div&gt;</span></code>
+</pre>
+
+
+                    </div> <!-- Section -->
+
+                    <div class="section">
+                      <h2>Dropdown button</h2>
+
+                      <p>simplePatterns dropdown button uses JavaScript to display a dropdown list when the button clicked. 
+                        This can be used to display a list of form options, links or actions. 
+                      </br> </br>
+                        The dropdown button uses the same <code><span class="value">.btn</span></code> classes 
+                        and therefore can be outlined, filled or text-based, as well as be different colours.
+                      </p>
+
+                      <div class="buttons_row dropdown_row">
                         <div class="btn_drop_down">
                           <button class="btn filled">Drop down<i class="fas fa-angle-down"></i></button>
                           <div class="drop_down_list">
                             <a href="#" class="drop_down_option">Option 1</a>
                             <a href="#" class="drop_down_option">Option 2</a>
                             <a href="#" class="drop_down_option">Option 3</a>
-                          </div> <!-- Drop down options -->
-                        </div> <!-- Drop down buttton -->
-                
-                        <div class="btn_drop_down">
-                          <button class="btn filled primary">Drop down<i class="fas fa-angle-down"></i></button>
-                          <div class="drop_down_list primary">
-                            <a href="#" class="drop_down_option primary">Option 1</a>
-                            <a href="#" class="drop_down_option primary">Option 2</a>
-                            <a href="#" class="drop_down_option primary">Option 3</a>
                           </div> <!-- Drop down options -->
                         </div> <!-- Drop down buttton -->
                 
@@ -143,22 +227,33 @@
                             <a href="#" class="drop_down_option">Option 3</a>
                           </div> <!-- Drop down options -->
                         </div> <!-- Drop down buttton -->
+                      </div>
                 
-                        <div class="btn_drop_down">
-                          <button class="btn outline primary">Drop down<i class="fas fa-angle-down"></i></button>
-                          <div class="drop_down_list primary">
-                            <a href="#" class="drop_down_option primary">Option 1</a>
-                            <a href="#" class="drop_down_option primary">Option 2</a>
-                            <a href="#" class="drop_down_option primary">Option 3</a>
-                          </div> <!-- Drop down options -->
-                        </div> <!-- Drop down buttton -->
-                      </div> <!-- Buttons row -->
-                    </div> <!-- Sub section -->
-                    <div class="sub_section">
-                      <h3>Disabled</h3>
+<pre><code><span class="tag">&lt;div </span><span class="attribute">class=</span><span class="value">"btn_drop_down"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn filled"</span><span class="tag">&gt;</span>Dropdown<span class="tag">&lt;i </span><span class="attribute">class=</span><span class="value">"fas fa-angle-down"</span><span class="tag">&lt;i&gt;</span><span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;div </span><span class="attribute">class=</span><span class="value">"btn_drop_list"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"drop_down_option"</span><span class="tag">&gt;</span>Option 1<span class="tag">&lt;/a&gt;</span>
+      <span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"drop_down_option"</span><span class="tag">&gt;</span>Option 2<span class="tag">&lt;/a&gt;</span>
+      <span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"drop_down_option"</span><span class="tag">&gt;</span>Option 3<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;/div</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/div</span><span class="tag">&gt;</span>
+</code></pre>
+
+                    </div> <!-- Section -->
+
+                    <div class="section">
+                      <h2>Disabled Button</h2>
+
+                      <p>The disabled button is used to represent where a button usually is, but due to a particular reason, perhaps the user not entering the correct information, is therefore disabled.</p>
+
                       <div class="buttons_row">
                         <a class=" btn disabled">Disabled</a>
                       </div> <!-- Buttons row -->
+
+<pre>
+<code><span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn disabled"</span><span class="tag">&gt;</span>Disabled<span class="tag">&lt;/a&gt;</span>
+</code></pre>
+
                     </div> <!-- Sub section -->
                     </div> <!-- Section -->
                 </div> <!-- Body content container -->

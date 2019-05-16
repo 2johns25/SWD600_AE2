@@ -27,13 +27,9 @@
 </head>
 <body>
     <div class="global_site_wrapper">
-        <div class="global_header">
-            <div class="global_header_container">
-                <h1>simplePattern</h1>
-            </div> <!-- Global header container -->
-        </div> <!-- Global header -->
         <div class="global_body_wrapper">
             <div class="side_bar_wrapper">
+                    <h1>simplePattern</h1>
                 <ul>
                     <li><a href="index.html">Overview</a></li>
                     <li><a href="navigation.html">Navigation</a></li>
@@ -45,39 +41,119 @@
                     <li><a href="footer.html">Footer</a></li>
                 </ul>
             </div> <!-- Side bar wrapper -->
-            <div class="main_body_wrapper">
-                <div class="body_content_container">
+            <span class="main_body_wrapper">
+                <span class="body_content_container">
                     <div class="section">
                         <h1>Header</h1>
-                        <p class="page_intro">simpleSystem a simple, lightweight, responsive design system for basic websites.</p>
+                        <p class="page_intro">Headers are located at the top the page, underneath the navigation header and are used to provide important information to the user. </p>
                     </div>
 
-                    <div class="header">
-                            <img class="header_background" src="assets/images/header.jpg"/>
-                            <div class="header_overlay"></div>
-                            <div class="header_text_container">
-                                <h1>Main header</h1>
-                                <h2>Secondary header</h2>
-                            </div>
-                        </div>
-
-                    <div class="header">
-                        <img class="header_background" src="assets/images/header.jpg"/>
-                        <div class="header_overlay dark"></div>
-                        <div class="header_text_container light_text">
-                            <h1>Main header</h1>
-                            <h2>Secondary header</h2>
-                        </div>
+                    <div class="section">
+                        <h2>Overview</h2>
+                        <p>simplePattern's responsive header comes in three versions: default, light and dark, each of which can contain text which is centered horizontally and vertically.</p>
                     </div>
 
-                    <div class="header">
-                            <img class="header_background" src="assets/images/header.jpg"/>
-                            <div class="header_overlay light"></div>
-                            <div class="header_text_container">
-                                <h1>Main header</h1>
-                                <h2>Secondary header</h2>
+                    <div class="section">
+                            <h2>Examples</h2>
+
+                            <div class="sub_section">
+                                <h3>Default</h3>
+                                <p>The default header styles includes a single image, with optional text but no overlay. This is great for when you
+                                    have naturally contrasting images and text.</p>
+
+                                <div class="header">
+                                    <img class="header_background" src="assets/images/header.jpg"/>
+                                    <div class="header_overlay"></div>
+                                    <div class="header_text_container">
+                                        <h1>Main header</h1>
+                                        <h2>Secondary header</h2>
+                                    </div>
+                                </div>
+
+<pre>
+<code class="code_block"><span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attribute">class=</span><span class="value">"header_background"</span> <span class="attribute">src=</span><span class="value">"assets/images/header.jpg"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header_overlay"</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header_text_container"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Main header<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;h2&gt;</span>Secondary header<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</code>
+</pre>
+
                             </div>
-                        </div>
+                             
+                        
+                        <div class="sub_section">
+                                <h3>Dark overlay</h3>
+                                <p>The header with the dark overlay, will enable you to use any picture with light text. Simply add the <code><span class="value">.dark</span></code> class and the <code><span class="value">.light_text</span></code> class as seen below.</p>
+
+                                <div class="header">
+                                    <img class="header_background" src="assets/images/header.jpg"/>
+                                    <div class="header_overlay dark"></div>
+                                    <div class="header_text_container light_text">
+                                        <h1>Main header</h1>
+                                        <h2>Secondary header</h2>
+                                    </div>
+                                </div>
+
+<pre>
+<code class="code_block"><span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attribute">class=</span><span class="value">"header_background"</span> <span class="attribute">src=</span><span class="value">"assets/images/header.jpg"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header_overlay dark"</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header_text_container light_text"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Main header<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;h2&gt;</span>Secondary header<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</code>
+</pre>
+
+                            </div>
+
+
+                            <div class="sub_section">
+                                    <h3>Light overlay</h3>
+                                    <p>The header with the light overlay, will enable you to use any picture with dark text. Simply add the <code><span class="value">.light</span></code> class as seen below.</p>
+    
+                                        <div class="header">
+                                                <img class="header_background" src="assets/images/header.jpg"/>
+                                                <div class="header_overlay light"></div>
+                                                <div class="header_text_container">
+                                                    <h1>Main header</h1>
+                                                    <h2>Secondary header</h2>
+                                                </div>
+                                            </div>
+    
+<pre>
+<code class="code_block"><span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attribute">class=</span><span class="value">"header_background"</span> <span class="attribute">src=</span><span class="value">"assets/images/header.jpg"</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header_overlay light"</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header_text_container"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Main header<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;h2&gt;</span>Secondary header<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</code>
+</pre>
+    
+                                </div>
+    
+    
+
+
+                        </div>    
+
+
+
+
+                        
+
+
+                    
+
+                    
 
                 </div> <!-- Body content container -->
             </div> <!-- Main body wrapper -->

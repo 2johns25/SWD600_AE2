@@ -27,13 +27,9 @@
 </head>
 <body>
     <div class="global_site_wrapper">
-        <div class="global_header">
-            <div class="global_header_container">
-                <h1>simplePattern</h1>
-            </div> <!-- Global header container -->
-        </div> <!-- Global header -->
         <div class="global_body_wrapper">
             <div class="side_bar_wrapper">
+                    <h1>simplePattern</h1>
                 <ul>
                     <li><a href="index.html">Overview</a></li>
                     <li><a href="navigation.html">Navigation</a></li>
@@ -49,116 +45,146 @@
                 <div class="body_content_container">
                     <div class="section">
                         <h1>Grid</h1>
-                        <p class="page_intro">simpleSystem a simple, lightweight, responsive design system for basic websites.</p>
+                        <p class="page_intro">Grids are used for maintaining consistency within a website and ensure items are aligned at different sized viewports.</p>
                     </div>
 
+                    <div class="section">
+                            <h2>Overview</h2>
+                            <p class="para_norm">simplePattern's grid is implemented using basic floats. The grid content must be contained within a 
+                                grid container, which contains rows. Individual columns must be the direct children of rows.
+                            </p>
 
+                            <div class="grid_view_container">
 
-                    <div class="grid_view_container">
-
-                            <div class="grid">
-                                    <div class="row">
-                                        <!-- COLUMN 12 -->
-                                        <div class="col-wd-12">
-                                            <div class="col">12 Column</div>
-                                        </div>
-                                        <!-- COLUMN 6 -->
-                                        <div class="col-wd-6">
-                                            <div class="col">6 Column</div>
-                                        </div>
-                                        <div class="col-wd-6">
-                                            <div class="col">6 Column</div>
-                                        </div>
-                                        <!-- COLUMN 4 -->
-                                        <div class="col-wd-6 col-md-4">
-                                            <div class="col">4 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-4">
-                                            <div class="col">4 Column</div>
-                                        </div>
-                                        <div class="col-wd-12 col-md-4">
-                                            <div class="col">4 Column</div>
-                                        </div>            
-                            
-                                        <!-- COLUMN 3 -->
-                            
-                                        <div class="col-wd-6 col-md-3">
-                                            <div class="col">3 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-3">
-                                            <div class="col">3 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-3">
-                                            <div class="col">3 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-3">
-                                            <div class="col">3 Column</div>
-                                        </div>
-                            
-                                        <!-- COLUMN 2 -->
-                            
-                                        <div class="col-wd-6 col-md-4 col-sm-2">
-                                            <div class="col">2 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-4 col-sm-2">
-                                            <div class="col">2 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-4 col-sm-2">
-                                            <div class="col">2 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-4 col-sm-2">
-                                            <div class="col">2 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-4 col-sm-2">
-                                            <div class="col">2 Column</div>
-                                        </div>
-                                        <div class="col-wd-6 col-md-4 col-sm-2">
-                                            <div class="col">2 Column</div>
-                                        </div>
-                            
-                                        <!-- COLUMN 1 -->
-                            
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
-                                        </div>
-                                        <div class="col-wd-3 col-md-2 col-sm-1">
-                                            <div class="col">1</div>
+                                <div class="grid">
+                                        <div class="row">
+                                            <!-- COLUMN 12 -->
+                                            <div class="col-sm-12">
+                                                <div class="col">12 Column</div>
+                                            </div>
+                                            <!-- COLUMN 6 -->
+                                            <div class="col-sm-6">
+                                                <div class="col">6 Column</div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="col">6 Column</div>
+                                            </div>
+                                            <!-- COLUMN 4 -->
+                                            <div class="col-sm-6 col-md-4">
+                                                <div class="col">4 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4">
+                                                <div class="col">4 Column</div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="col">4 Column</div>
+                                            </div>            
+                                
+                                            <!-- COLUMN 3 -->
+                                
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="col">3 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="col">3 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="col">3 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="col">3 Column</div>
+                                            </div>
+                                
+                                            <!-- COLUMN 2 -->
+                                
+                                            <div class="col-sm-6 col-md-4 col-sm-2">
+                                                <div class="col">2 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-sm-2">
+                                                <div class="col">2 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-sm-2">
+                                                <div class="col">2 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-sm-2">
+                                                <div class="col">2 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-sm-2">
+                                                <div class="col">2 Column</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-sm-2">
+                                                <div class="col">2 Column</div>
+                                            </div>
+                                
+                                            <!-- COLUMN 1 -->
+                                
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-2 col-sm-1">
+                                                <div class="col">1</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            
+                        </div>
 
+                        <div class="section">
+                                <h2>Classes</h2>
+                                
+                                <p class="para_norm">There are three groups of classes that correspond with three different viewport widths, which are distinguishable
+                                    with the <code>-sm-</code> <code>-md-</code> and <code>-wd-</code> classes.</br> </br>
+                                    <code>-sm-</code> classes are used for screen widths between 320px
+                                    and 600px. </br></br>
+                                    <code>-md-</code> classes are used for screen widths between 600px and 768px. </br></br>
+                                    <code>-wd-</code> classes are used for screen widths higher than 768px.</br></br>
+                                    
+                                    Looking at the example code below, the div will take up 12 columns between the screen sizes of 320px and 600px, 6 columns between 600px and 768px and 12 columns at any screen width larger than 768px.
+                                </p>
+                                
+<pre>
+<code><span class="tag">&lt;div </span><span class="attribute">class=</span><span class="value">"grid"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="attribute">class=</span><span class="value">"row"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;div </span><span class="attribute">class=</span><span class="value">"col-sm-12 col-md-6 col-wd-12"</span><span class="tag">&gt;</span>
+            <span class="code_comment">&lt;!-- Custom HTML goes here --&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>  
+    <span class="tag">&lt;/div&gt;</span>  
+</code><span class="tag">&lt;/div&gt;</span>  
+</pre>
+                                        
+                                
 
+                            </div>
                     </div>
                 </div> <!-- Body content container -->
             </div> <!-- Main body wrapper -->

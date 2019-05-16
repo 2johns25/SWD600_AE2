@@ -27,13 +27,9 @@
 </head>
 <body>
     <div class="global_site_wrapper">
-        <div class="global_header">
-            <div class="global_header_container">
-                <h1>simplePattern</h1>
-            </div> <!-- Global header container -->
-        </div> <!-- Global header -->
         <div class="global_body_wrapper">
             <div class="side_bar_wrapper">
+                    <h1>simplePattern</h1>
                 <ul>
                     <li><a href="index.html">Overview</a></li>
                     <li><a href="navigation.html">Navigation</a></li>
@@ -46,17 +42,39 @@
                 </ul>
             </div> <!-- Side bar wrapper -->
             <div class="main_body_wrapper">
-                <div class="body_content_container">
+                <span class="body_content_container">
                     <div class="section">
                         <h1>Jumbotron</h1>
-                        <p class="page_intro">simpleSystem a simple, lightweight, responsive design system for basic websites.</p>
+                        <p class="page_intro">Jumbotrons are used to present the user with information to get them to interact with a call to action.</p>
                     </div>
 
-                    <div class="jumbotron">
-                        <h1>Jumbotron header</h1>
-                        <p>This is a jumbotron component</p>
-                        <button class=" btn primary filled">Primay</button>
+
+                    <div class="section">
+                        <h2>Overview</h2>
+                        <p>simplePattern's takes up the full width of it's container and contains a CTA button. The Jumbotron can also contain
+                            other elements such as headers, paragraphs, line breaks and so on.</p>
                     </div>
+
+                    <div class="section">
+                            <h2>Example</h2>
+                            <div class="jumbotron">
+                                <h1>Jumbotron header</h1>
+                                <p>This is a jumbotron component</p>
+                                <button class=" btn primary filled">Primay</button>
+                            </div>
+                        </div>
+
+<pre>
+<code class="code_block"><span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"jumbotron"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"header_text_container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Jumbotron header<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This is a jumbotron component<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attribute">class=</span><span class="value">"btn filled"</span><span class="tag">&gt;Default<span class="tag">&lt;a&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</code>
+</pre>
+
+</div>
 
                 </div> <!-- Body content container -->
             </div> <!-- Main body wrapper -->
