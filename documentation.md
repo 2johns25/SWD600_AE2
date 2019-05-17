@@ -26,11 +26,9 @@ Pattern libraries are a collection of UI elements in the form of HTML snippets, 
 
 ### Development options
 
-
-
-### Current best practices
-
 # Design process method
+
+
 
 # Testing
 

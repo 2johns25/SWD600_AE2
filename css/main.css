@@ -668,7 +668,7 @@ pre {
     background-color: rgba(219, 219, 219, 0.473);
   }
 
-  .light_text {
+  .header_text_container.light_text {
     color: white;
   }
 
